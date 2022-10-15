@@ -1,0 +1,33 @@
+= bvmgo-geometry
+
+== Vector
+
+Build a vector with 2 coordinates:
+[source,go]
+----
+vec2 = Vec2{1., 2.}
+----
+
+Build a vector with 3 coordinates:
+[source,go]
+----
+vec3 = Vec3{1., 2., 3.}
+----
+
+== Matrix
+
+Build a 3x3 matrix:
+[source,go]
+----
+mat3x3 := Mat3x3{
+    {1., 2., 3.}, // row 0
+    {4., 5., 6.}, // row 1
+    {7., 8., 9.}, // row 2
+}
+----
+
+Build an identity matrix:
+[source,go]
+----
+idmat3x3 := Mat3x3Identity()
+----
